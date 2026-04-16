@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Asharudheen KC</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="device">
+    <div class="screen" id="screen">
+      <div class="stars" id="stars"></div>
+      <div class="notch"></div>
+      <div class="statusbar">
+        <div class="status-time" id="clock">9:41</div>
+        <div class="status-icons">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M1 9l2 2c4.97-4.97 13.03-4.97 18 0l2-2C16.93 2.93 7.08 2.93 1 9zm8 8l3 3 3-3a4.237 4.237 0 00-6 0zm-4-4l2 2a7.074 7.074 0 0110 0l2-2C15.14 9.14 8.87 9.14 5 13z" />
+          </svg>
+          <div class="battery-icon">
+            <div class="battery-fill"></div>
+          </div>
+        </div>
+      </div>
+      <div class="home" id="homeScreen">
+        <div class="profile-widget">
+          <div class="avatar"><img src="images/Image%20(1).jpg" alt="Asharudheen KC" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></div>
+          <div class="profile-info">
+            <div class="profile-name">Asharudheen KC</div>
+            <div class="profile-role">Flutter &amp; Android Developer</div>
+          </div>
+
+        </div>
+        <div class="page-label">Projects &amp; Apps</div>
+        <div class="app-grid-scroll">
+          <div class="app-grid" id="appGrid"></div>
+        </div>
+        <div class="dock" id="dockEl"></div>
+      </div>
+      <div id="appScreens"></div>
+      <div class="home-indicator"></div>
+    </div>
+  </div>
+  <div class="theme-toggle" onclick="toggleTheme()">🌙</div>
+  <div class="device-label">ASHARUDHEEN KC · PORTFOLIO</div>
+
+  <script src="script.js" defer></script>
+</body>
+
+</html>
