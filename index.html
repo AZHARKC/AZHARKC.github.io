@@ -30,12 +30,33 @@
       </div>
       <div class="home" id="homeScreen">
         <div class="profile-widget">
-          <div class="avatar">AK</div>
+          <div class="avatar"><img src="images/Image%20(1).jpg" alt="Asharudheen KC" style="width:100%;height:100%;object-fit:cover;border-radius:50%;"></div>
           <div class="profile-info">
             <div class="profile-name">Asharudheen KC</div>
             <div class="profile-role">Flutter &amp; Android Developer</div>
           </div>
-          <div class="profile-badge">Active</div>
+          <div class="notif-bell" onclick="toggleNotifPanel()">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z" fill="currentColor"/></svg>
+            <div class="notif-badge">1</div>
+          </div>
+        </div>
+        <div class="notif-overlay" id="notifOverlay" onclick="toggleNotifPanel()"></div>
+        <div class="notif-panel" id="notifPanel">
+          <div class="notif-handle" onclick="toggleNotifPanel()"></div>
+          <div class="notif-header">
+            <div class="notif-title">Notifications</div>
+            <div class="notif-clear" onclick="clearNotif()">Clear</div>
+          </div>
+          <a href="https://pub.dev/packages/flutter_user_idle" target="_blank" class="notif-item" id="notifItem">
+            <div class="notif-icon">📦</div>
+            <div class="notif-body">
+              <div class="notif-app">pub.dev</div>
+              <div class="notif-msg"><strong>Asharudheen KC</strong> published a new package — <strong>flutter_user_idle</strong></div>
+              <div class="notif-desc">Detect user inactivity and trigger callbacks after a specified idle duration in Flutter apps.</div>
+              <div class="notif-time">Just now</div>
+            </div>
+            <div class="notif-dot"></div>
+          </a>
         </div>
         <div class="page-label">Projects &amp; Apps</div>
         <div class="app-grid-scroll">
@@ -50,7 +71,7 @@
   <div class="theme-toggle" onclick="toggleTheme()">🌙</div>
   <div class="device-label">ASHARUDHEEN KC · PORTFOLIO</div>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 
 </html>

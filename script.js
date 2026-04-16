@@ -121,77 +121,77 @@ function makeScreenshot(type, color1, color2, label) {
 const APPS = [
   {
     id: 'ess', name: 'ESS HR', company: 'Ionob Technologies', period: 'Jul 2025 – Present', color: 'ic-blue', iconEmoji: '👤', iconImg: 'images/stimes.png', iconBg: '#3b82f6',
-    desc: 'Employee Self Service HRMS app for attendance, leave, payroll & approvals.',
-    bullets: ['Developing HRMS mobile app for employee management, attendance, leave, payroll & approvals', 'Implemented BLoC architecture with clean structure and scalable modules', 'Integrated REST APIs, biometric authentication & deep linking', 'Optimized local persistence using Hive CE', 'Implemented Google Maps, location tracking & real-time attendance'],
-    tags: [['Flutter', ''], ['BLoC', 'purple'], ['Hive CE', ''], ['Google Maps', 'green'], ['Biometric Auth', 'pink'], ['REST APIs', '']],
+    desc: 'Flutter Employee Self-Service app with 8+ modules including attendance, leave, expense, tasks, payslip & complaints.',
+    bullets: ['Built a Flutter Employee Self-Service app with 8+ modules including attendance, leave, expense, tasks, payslip, and complaints — using BLoC and clean architecture', 'Developed 6 check-in methods (QR, selfie, PIN, GPS, live tracking, geo-pin) with Firebase integration, making attendance seamless for both remote and on-site users', 'Built a live location feature using Firebase Realtime DB and background services to support accurate on-field attendance verification', 'Added OAuth2, MPIN, and biometric authentication, push notifications via FCM, and multi-language support — delivered across dev, staging, and production builds'],
+    tags: [['Flutter', ''], ['BLoC', 'purple'], ['Firebase', 'green'], ['OAuth2', 'pink'], ['FCM', ''], ['Hive CE', '']],
     screenshots: [{ img: 'images/ess/Preview.png' }, { img: 'images/ess/Preview-1.png' }, { img: 'images/ess/Preview-2.png' }, { img: 'images/ess/Preview-3.png' }, { img: 'images/ess/Preview-4.png' }, { img: 'images/ess/Preview-5.png' }], links: []
   },
   {
     id: 'kiosk', name: 'KIOSK', company: 'Ionob Technologies', period: 'Jul 2025 – Present', color: 'ic-indigo', iconEmoji: '🖥️', iconImg: 'images/Stimes%20kiosk.png', iconBg: '#6366f1',
-    desc: 'Tablet-based attendance kiosk for office environments with real-time sync.',
-    bullets: ['Developed tablet-based attendance system for office environments', 'Implemented QR scan, Face authentication & PIN-based check-in', 'Real-time sync with backend using REST APIs and WebSocket', 'Designed responsive UI optimized for large screen devices'],
-    tags: [['Flutter', ''], ['WebSocket', 'purple'], ['QR Scan', ''], ['Face Auth', 'pink'], ['Tablet UI', 'green']],
+    desc: 'Biometric attendance and access control system supporting Face, QR, and PIN authentication.',
+    bullets: ['Built a biometric attendance and access control system supporting Face, QR, and PIN authentication', 'Implemented on-device face recognition with offline-first architecture and SSE-based real-time synchronization', 'Integrated IoT-based smart door unlocking via Shelly relays'],
+    tags: [['Flutter', ''], ['TensorFlow Lite', 'purple'], ['MLKit', ''], ['Hive', 'green'], ['IoT', 'pink'], ['SSE', '']],
     screenshots: [{ img: 'images/KIOSK/Setup%20screen.png' }, { img: 'images/KIOSK/4DIGIT%20PIN%20KIOSK.png' }, { img: 'images/KIOSK/Face%20ID%20Kiosk.png' }, { img: 'images/KIOSK/QR%20Scanner%20Kiosk.png' }, { img: 'images/KIOSK/QR%20Code%20Generator%20Kiosk.png' }, { img: 'images/KIOSK/Network%20Error%20Screen.png' }], links: []
   },
   {
     id: 'twsp', name: 'Twaddan SP', company: 'Dataspot Technologies', period: 'Feb 2024 – Jul 2025', color: 'ic-teal', iconEmoji: '🚗', iconImg: 'images/twaddan/logo.webp', iconContain: true, iconBg: '#14b8a6',
-    desc: 'Driver app — Firebase, real-time location, multilingual, Play Store + App Store.',
+    desc: 'Driver app with Firebase integration, real-time location tracking & multilingual notifications.',
     bullets: ['Firebase integration, real-time location tracking, multilingual notifications', 'Handled both Android and iOS builds', 'Tested and deployed to Play Store and App Store'],
     tags: [['Flutter', ''], ['Firebase', 'green'], ['Real-time', ''], ['iOS Deploy', 'pink'], ['Multilingual', 'purple']],
-    screenshots: [{ img: 'images/twaddan/twddan1.webp' }, { img: 'images/twaddan/twaddan2.webp' }, { img: 'images/twaddan/twaddan3.webp' }],
+    screenshots: [{ img: 'images/twaddansp/1.webp' }, { img: 'images/twaddansp/3.webp' }, { img: 'images/twaddansp/4.webp' }, { img: 'images/twaddansp/shared%20image%20(5).jpg' }],
     links: [{ label: 'Play Store', url: '#' }, { label: 'App Store', url: '#', o: 1 }]
   },
   {
     id: 'twcust', name: 'Twaddan App', company: 'Dataspot Technologies', period: 'Feb 2024 – Jul 2025', color: 'ic-sky', iconEmoji: '🛵', iconImg: 'images/twaddan/twaddan%20logo.webp', iconContain: true, iconBg: '#0ea5e9',
-    desc: 'Customer booking app with MVVM, Jetpack Compose, payments & notifications.',
-    bullets: ['Native Android app using MVVM architecture with Jetpack Compose', 'Built features in Kotlin & Java — booking, payments, offers, notifications', 'Integrated REST APIs and WebHook-based real-time updates'],
-    tags: [['Android', ''], ['MVVM', 'purple'], ['Jetpack Compose', ''], ['Kotlin', 'pink'], ['Payments', 'green']],
-    screenshots: [{ img: 'images/twaddan/1.webp' }, { img: 'images/twaddan/2.webp' }, { img: 'images/twaddan/3.webp' }, { img: 'images/twaddan/4.webp' }],
+    desc: 'Native Android customer booking app with MVVM architecture and Jetpack Compose.',
+    bullets: ['Developed native Android application using MVVM architecture with Jetpack Compose', 'Built features using Kotlin and Java, including booking, payments, offers, and push notifications', 'Integrated REST APIs and WebHook-based real-time updates'],
+    tags: [['Android', ''], ['MVVM', 'purple'], ['Jetpack Compose', ''], ['Kotlin', 'pink'], ['Payments', 'green'], ['REST APIs', '']],
+    screenshots: [{ img: 'images/twaddan/twddan1.webp' }, { img: 'images/twaddan/twaddan2.webp' }, { img: 'images/twaddan/twaddan3.webp' }, { img: 'images/twaddan/2.webp' }, { img: 'images/twaddan/shared%20image.jpg' }, { img: 'images/twaddan/shared%20image%20(1).jpg' }, { img: 'images/twaddan/shared%20image%20(3).jpg' }, { img: 'images/twaddan/shared%20image%20(6).jpg' }, { img: 'images/twaddan/shared%20image%20(7).jpg' }, { img: 'images/twaddan/Media%20(2).jpg' }, { img: 'images/twaddan/Media%20(3).jpg' }, { img: 'images/twaddan/Media%20(4).jpg' }, { img: 'images/twaddan/Media%20(6).jpg' }, { img: 'images/twaddan/Media%20(7).jpg' }, { img: 'images/twaddan/Media%20(8).jpg' }, { img: 'images/twaddan/Media%20(11).jpg' }, { img: 'images/twaddan/Media%20(19).jpg' }],
     links: [{ label: 'Play Store', url: '#' }]
   },
   {
     id: 'vfuel', name: 'V Fuel Driver', company: 'Dataspot Technologies', period: 'Feb 2024 – Jul 2025', color: 'ic-amber', iconEmoji: '⛽', iconImg: 'images/vfuel/VF-logo.png', iconContain: true, iconBg: '#f59e0b',
-    desc: 'Native Android driver app for live fuel delivery tracking with Google Maps.',
-    bullets: ['Developed native Android app using MVP architecture in Java', 'Implemented order handling, tracking & reporting features', 'Integrated REST APIs and Google Maps for live operations'],
-    tags: [['Android', ''], ['MVP', 'purple'], ['Java', ''], ['Google Maps', 'green']],
-    screenshots: [{ img: 'images/vfuel/1.jpg' }, { img: 'images/vfuel/2.png' }, { img: 'images/vfuel/3.png' }, { img: 'images/vfuel/4.jpg' }], links: []
+    desc: 'Native Android driver app using MVP architecture for live fuel delivery operations.',
+    bullets: ['Developed native Android app using MVP architecture', 'Implemented features using Java, including order handling, tracking, and reporting', 'Integrated REST APIs and Google Maps for live operations'],
+    tags: [['Android', ''], ['MVP', 'purple'], ['Java', ''], ['Google Maps', 'green'], ['REST APIs', '']],
+    screenshots: [{ img: 'images/vfuel/1.jpg' }, { img: 'images/vfuel/2.png' }, { img: 'images/vfuel/3.png' }, { img: 'images/vfuel/4.jpg' }, { img: 'images/vfuel/Media%20(1).jpg' }, { img: 'images/vfuel/Media.jpg' }, { img: 'images/vfuel/shared%20image%20(8).jpg' }, { img: 'images/vfuel/shared%20image%20(9).jpg' }, { img: 'images/vfuel/shared%20image%20(10).jpg' }, { img: 'images/vfuel/shared%20image%20(11).jpg' }, { img: 'images/vfuel/shared%20image%20(12).jpg' }, { img: 'images/vfuel/shared%20image%20(13).jpg' }], links: []
   },
   {
-    id: 'tahsin', name: 'Tahsin', company: 'Dataspot Technologies', period: 'Feb 2024 – Jul 2025', color: 'ic-lime', iconEmoji: '📋', iconBg: '#84cc16',
-    desc: 'Task tracking, reporting & engineer supervision app built in Java.',
-    bullets: ['Native Android app using MVP architecture with Java', 'Developed modules for task tracking, reporting & engineer supervision'],
-    tags: [['Android', ''], ['MVP', 'purple'], ['Java', ''], ['Task Mgmt', 'green']],
+    id: 'tahsin', name: 'Tahsin', company: 'Dataspot Technologies', period: 'Feb 2024 – Jul 2025', color: 'ic-lime', iconEmoji: '📋', iconImg: 'images/tahsin/play_store_512.png', iconContain: true, iconBg: '#84cc16',
+    desc: 'Native Android app for task tracking, reporting, and engineer supervision.',
+    bullets: ['Built native Android application using MVP architecture with Java', 'Developed modules for task tracking, reporting, and engineer supervision'],
+    tags: [['Android', ''], ['MVP', 'purple'], ['Java', '']],
     screenshots: [{ t: 'dashboard', c1: '#0d160a', c2: '#84cc16' }, { t: 'list', c1: '#0d160a', c2: '#65a30d' }, { t: 'form', c1: '#0d160a', c2: '#84cc16' }, { t: 'chat', c1: '#0d160a', c2: '#65a30d' }], links: []
   },
   {
     id: 'cway', name: 'Cityway Limo', company: 'Dataspot Technologies', period: 'Feb 2024 – Jul 2025', color: 'ic-violet', iconEmoji: '🚙', iconImg: 'images/CITYWAY/logo.png', iconContain: true, iconBg: '#7c3aed',
-    desc: 'Luxury limousine booking with RTL, dark mode & real-time trip updates.',
+    desc: 'Luxury limousine booking app with GetX, Google Maps, RTL/dark mode & real-time trip updates.',
     bullets: ['Implemented GetX, Google Maps, RTL/dark mode, real-time trip updates', 'Managed real-time status updates and ride flow'],
     tags: [['Flutter', ''], ['GetX', 'purple'], ['Google Maps', 'green'], ['RTL', ''], ['Dark Mode', 'pink']],
-    screenshots: [{ img: 'images/CITYWAY/first.png' }, { img: 'images/CITYWAY/onboard_1.png' }, { img: 'images/CITYWAY/onboard_2.jpg' }, { img: 'images/CITYWAY/onboard_3.jpg' }, { img: 'images/CITYWAY/Boardtwo.png' }, { img: 'images/CITYWAY/Boardfour.png' }, { img: 'images/CITYWAY/carousel_1.png' }, { img: 'images/CITYWAY/carousel_2.png' }],
+    screenshots: [{ img: 'images/CITYWAY/Boardfour.png' }, { img: 'images/CITYWAY/carousel_1.png' }, { img: 'images/CITYWAY/carousel_2.png' }, { img: 'images/CITYWAY/onboard_1.png' }, { img: 'images/CITYWAY/onboard_2.jpg' }, { img: 'images/CITYWAY/onboard_3.jpg' }, { img: 'images/CITYWAY/shared%20image%20(14).jpg' }],
     links: [{ label: 'citywaylimo.ae', url: 'https://citywaylimo.ae', o: 1 }]
   },
   {
     id: 'cwpilot', name: 'Cityway Pilot', company: 'Dataspot Technologies', period: 'Feb 2024 – Jul 2025', color: 'ic-rose', iconEmoji: '🧑‍✈️', iconImg: 'images/CITYWAY/logo.png', iconContain: true, iconBg: '#f43f5e',
-    desc: 'Driver pilot app with OTP auth, background tracking & GetX state management.',
-    bullets: ['Built login, OTP verification & profile modules using Flutter and GetX', 'Integrated background services for driver status tracking'],
+    desc: 'Driver pilot app for managing real-time status updates and ride flow.',
+    bullets: ['Managed real-time status updates and ride flow', 'Built login, OTP verification, and profile modules using Flutter and GetX', 'Integrated background services for driver status'],
     tags: [['Flutter', ''], ['GetX', 'purple'], ['OTP Auth', 'pink'], ['Background Svc', 'green']],
-    screenshots: [{ img: 'images/CITYWAY/first.png' }, { img: 'images/CITYWAY/onboard_1.png' }, { img: 'images/CITYWAY/onboard_2.jpg' }, { img: 'images/CITYWAY/onboard_3.jpg' }, { img: 'images/CITYWAY/Boardtwo.png' }, { img: 'images/CITYWAY/Boardfour.png' }, { img: 'images/CITYWAY/carousel_1.png' }, { img: 'images/CITYWAY/carousel_2.png' }],
+    screenshots: [{ img: 'images/CITYWAY/Boardfour.png' }, { img: 'images/CITYWAY/carousel_1.png' }, { img: 'images/CITYWAY/carousel_2.png' }, { img: 'images/CITYWAY/onboard_1.png' }, { img: 'images/CITYWAY/onboard_2.jpg' }, { img: 'images/CITYWAY/onboard_3.jpg' }, { img: 'images/CITYWAY/shared%20image%20(14).jpg' }],
     links: [{ label: 'citywaylimo.ae', url: 'https://citywaylimo.ae', o: 1 }]
   },
   {
-    id: 'vansale', name: 'Van Sale', company: 'Beeka Technologies', period: '2023', color: 'ic-green', iconEmoji: '🚚', iconImg: 'images/KOT/logo.jpg', iconContain: true, iconBg: '#10b981',
+    id: 'vansale', name: 'Van Sale', company: 'Beeka Technologies', period: '2023', color: 'ic-green', iconEmoji: '🚚', iconImg: 'images/Vansale/logo.jpg', iconContain: true, iconBg: '#10b981',
     desc: 'Sales management app from scratch with SQLite sync & authentication.',
     bullets: ['Designed and developed app from scratch using Flutter', 'Authentication, product listings, SQL database sync'],
     tags: [['Flutter', ''], ['SQLite', 'green'], ['Authentication', 'purple']],
-    screenshots: [{ t: 'login', c1: '#051a10', c2: '#10b981' }, { t: 'list', c1: '#051a10', c2: '#059669' }, { t: 'dashboard', c1: '#051a10', c2: '#10b981' }, { t: 'form', c1: '#051a10', c2: '#059669' }], links: []
+    screenshots: [{ img: 'images/Vansale/1.jpg' }, { img: 'images/Vansale/2.jpg' }, { img: 'images/Vansale/Media%20(5).jpg' }], links: []
   },
   {
-    id: 'kot', name: 'KOT App', company: 'Beeka Technologies', period: '2023', color: 'ic-red', iconEmoji: '🍳', iconImg: 'images/KOT/logo.jpg', iconContain: true, iconBg: '#ef4444',
+    id: 'kot', name: 'KOT App', company: 'Beeka Technologies', period: '2023', color: 'ic-red', iconEmoji: '🍳', iconImg: 'images/Vansale/logo.jpg', iconContain: true, iconBg: '#ef4444',
     desc: 'Kitchen Order Ticket app with real-time updates and print-ready receipts.',
     bullets: ['Real-time KOT updates for kitchen staff', 'Order history and print-ready receipts'],
     tags: [['Flutter', ''], ['Real-time', 'pink'], ['Receipt Print', 'green']],
-    screenshots: [{ img: 'images/KOT/1.jpg' }, { img: 'images/KOT/2.jpg' }], links: []
+    screenshots: [{ img: 'images/KOT/Media%20(9).jpg' }, { img: 'images/KOT/Media%20(12).jpg' }, { img: 'images/KOT/Media%20(13).jpg' }, { img: 'images/KOT/Media%20(14).jpg' }, { img: 'images/KOT/Media%20(15).jpg' }, { img: 'images/KOT/Media%20(16).jpg' }], links: []
   }
 ];
 
@@ -257,10 +257,10 @@ function projectHtml(app) {
   const links = app.links.length ? `<div class="store-links">${app.links.map(l => `<a href="${l.url}" target="_blank" class="store-btn ${l.o ? 'outline' : ''}">${l.label}</a>`).join('')}</div>` : '';
   return `<div class="app-header">${backBtn(`closeApp('${app.id}')`)}<div class="app-hero">${iconBoxHtml(app, true)}<div class="app-title-block"><div class="app-title">${app.name}</div><div class="app-company">${app.company}</div><div class="app-period">${app.period}</div></div></div></div>
   <div class="app-divider"></div>
-  <div class="app-content"><p style="font-size:13.5px;font-weight:500;color:var(--muted);margin-bottom:14px;line-height:1.6;">${app.desc}</p>
+  <div class="app-content">${screenshotsSection(app)}
+  <p style="font-size:13.5px;font-weight:500;color:var(--muted);margin-bottom:14px;line-height:1.6;">${app.desc}</p>
   <div class="section-label">What I built</div><ul class="bullet-list">${bullets}</ul>
-  <div class="section-label">Tech Stack</div><div class="tags">${tags}</div>${links}
-  ${screenshotsSection(app)}</div>`;
+  <div class="section-label">Tech Stack</div><div class="tags">${tags}</div>${links}</div>`;
 }
 
 function specialHtml(app) {
@@ -271,8 +271,8 @@ function specialHtml(app) {
     <div class="section-label">Work History</div>
     <div class="info-card">
       <div class="info-card-row"><div class="info-icon ic-blue" style="font-size:14px;">🏢</div><div><div style="font-size:13px;font-weight:800;color:var(--text);">Ionob Technologies</div><div style="font-size:11px;color:var(--muted);margin-top:2px;">App Developer · Jul 2025 – Present</div></div></div>
-      <div class="info-card-row"><div class="info-icon ic-teal" style="font-size:14px;">🏢</div><div><div style="font-size:13px;font-weight:800;color:var(--text);">Dataspot Technologies</div><div style="font-size:11px;color:var(--muted);margin-top:2px;">Mobile App Developer · Feb 2024 – Jul 2025</div></div></div>
-      <div class="info-card-row"><div class="info-icon ic-green" style="font-size:14px;">🏢</div><div><div style="font-size:13px;font-weight:800;color:var(--text);">Beeka Technologies</div><div style="font-size:11px;color:var(--muted);margin-top:2px;">Flutter Developer · 2023</div></div></div>
+      <div class="info-card-row"><div class="info-icon ic-teal" style="font-size:14px;">🏢</div><div><div style="font-size:13px;font-weight:800;color:var(--text);">Dataspot Technologies, Kinfra, Kozhikode</div><div style="font-size:11px;color:var(--muted);margin-top:2px;">Mobile App Developer (Flutter & Android) · Feb 2024 – Jul 2025</div></div></div>
+      <div class="info-card-row"><div class="info-icon ic-green" style="font-size:14px;">🏢</div><div><div style="font-size:13px;font-weight:800;color:var(--text);">Beeka Technologies, Kalamassery, Ernakulam</div><div style="font-size:11px;color:var(--muted);margin-top:2px;">Flutter Developer · 2023</div></div></div>
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:4px;">
       <div class="info-card" style="text-align:center;padding:14px 8px;"><div style="font-size:28px;font-weight:900;color:var(--accent);">10</div><div style="font-size:10px;color:var(--muted);font-weight:700;margin-top:2px;text-transform:uppercase;letter-spacing:.06em;">Projects</div></div>
@@ -362,6 +362,29 @@ function toggleTheme() {
   const light = h.hasAttribute('data-light');
   if (light) { h.removeAttribute('data-light'); document.querySelector('.theme-toggle').textContent = '🌙'; }
   else { h.setAttribute('data-light', ''); document.querySelector('.theme-toggle').textContent = '☀️'; }
+}
+
+function toggleNotifPanel() {
+  const panel = document.getElementById('notifPanel');
+  const overlay = document.getElementById('notifOverlay');
+  const isOpen = panel.classList.contains('open');
+  if (isOpen) {
+    panel.classList.remove('open');
+    overlay.classList.remove('open');
+  } else {
+    panel.classList.add('open');
+    overlay.classList.add('open');
+  }
+}
+
+function clearNotif() {
+  const badge = document.querySelector('.notif-badge');
+  const item = document.getElementById('notifItem');
+  const dot = item.querySelector('.notif-dot');
+  badge.classList.add('hidden');
+  item.classList.add('read');
+  dot.classList.add('read');
+  setTimeout(() => toggleNotifPanel(), 300);
 }
 
 function updateClock() { const n = new Date(); document.getElementById('clock').textContent = n.getHours() + ':' + String(n.getMinutes()).padStart(2, '0'); }
